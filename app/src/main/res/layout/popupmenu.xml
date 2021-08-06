@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/esquinas_redondas">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progreso"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="false"
+            android:paddingEnd="270dp"
+            android:max="100"
+            android:visibility="invisible"
+            android:progress="0"/>
+
+        <TextView
+            android:id="@+id/txtCerrar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ruta"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/vtnNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Para continuar es necesrio que eliga una Ruta"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spRutaPop"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="15dp"
+            android:layout_weight=".7"
+            android:spinnerMode="dialog"/>
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:layout_width="140dp"
+            android:drawableRight="@drawable/ic_enviar"
+            android:layout_height="45dp"
+            android:background="@drawable/estiloboton"
+            android:text="Continuar"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:id="@+id/btnContinuar"/>
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:background="@color/azulfuerte">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="31sp"
+                android:textColor="#FFF"
+                android:text="Bienvenido a RutasBCH"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="GRACIAS a la app RutasBCH Admin podras trazar el recorrido de todas las rutas de colectivos, asi como tambien cada una de sus paradas de una manera fácil y rápida"
+                android:textSize="10dp"
+                android:layout_marginTop="25dp"
+                android:lineSpacingExtra="5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Iniciar Sesión"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#B6B5B5"
+                android:orientation="horizontal"
+                />
+
+            <EditText
+                android:layout_width="350dp"
+                android:drawablePadding="11dp"
+                android:drawableLeft="@drawable/ic_usuario_login"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de Usuario"
+                android:inputType="text"
+                android:id="@+id/etNombreUser"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:drawableLeft="@drawable/ic_bloqueado"
+                android:drawablePadding="11dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:id="@+id/etContrasenia"/>
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/progreso"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="false"
+                android:max="100"
+                android:visibility="invisible"
+                android:progress="0"/>
+            <Button
+                android:layout_marginTop="40dp"
+                android:layout_width="140dp"
+                android:drawableRight="@drawable/ic_enviar"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estiloboton"
+                android:text="Entrar"
+                android:textColor="#FFF"
+                android:id="@+id/btnIniciar"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
